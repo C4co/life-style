@@ -1,0 +1,108 @@
+{
+  "name": "life-style",
+  "version": "1.0.0",
+  "description": "Webpack init",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C4co/webpack-init.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.dev.js --watch --hide-modules",
+    "build": "webpack --config webpack.build.js --optimize-minimize --hide-modules",
+    "globals": "npm install -g csscomb standard protractor codeceptjs webpack codeceptjs-webdriverio selenium-standalone@latest",
+    "test": "jest --watch --coverage --verbose",
+    "test:once": "jest --coverage --verbose",
+    "test:e2e": "codeceptjs run --steps"
+  },
+  "standard": {
+    "globals": [
+      "Feature",
+      "Scenario",
+      "it",
+      "angular",
+      "module",
+      "beforeEach",
+      "Swiper",
+      "describe",
+      "expect"
+    ],
+    "ignore": [
+      "/dist",
+      "/assets"
+    ]
+  },
+  "jest": {
+    "coverageDirectory": ".coverage/",
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/src"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx",
+      "css",
+      "scss",
+      "less"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "testRegex": "(/__tests__/.*\\.(test|spec))\\.(js)$"
+  },
+  "author": "Carlos costa - C4co",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "css-loader": "^0.28.5",
+    "directory-named-webpack-plugin": "^2.2.3",
+    "dotenv": "^4.0.0",
+    "dotenv-webpack": "^1.5.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "jest-cli": "^20.0.4",
+    "node-sass": "^4.5.3",
+    "postcss-color-function": "^4.0.0",
+    "postcss-loader": "^2.0.6",
+    "precss": "^2.0.0",
+    "rucksack-css": "^1.0.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "linkstate": "^1.0.1",
+    "preact": "^8.2.4",
+    "preact-compat": "^3.17.0",
+    "preact-router": "^2.5.7",
+    "prop-types": "^15.5.10",
+    "styled-components": "^2.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/C4co/webpack-init/issues"
+  },
+  "homepage": "https://github.com/C4co/webpack-init#readme"
+}

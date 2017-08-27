@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+$button-background: #4c556b;
+$button-color: #fff;
+
+button,
+input[type=submit]{
+  appearance: none;
+}
+
+.btn{
+  font-family: inherit;
+  font-size: .78em;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 120px;
+  height: 30px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  cursor: pointer;
+  transition: border .1s linear 0s;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: $button-color;
+  border: none;
+  border-radius: 30px;
+  background: $button-background;
+
+  &:hover{
+    text-decoration: none;
+    background: darken($button-background, 10%);
+  }
+
+  &:active{
+    color: $button-color;
+    background: darken($button-background, 15%);
+  }
+}
+
+a.btn{
+  line-height: 29px;
+}
+
+button.btn[disabled],
+a.btn[disabled],
+input[type=submit].btn[disabled]{
+  cursor: no-drop;
+  background: lighten($button-background, 40%);
+}

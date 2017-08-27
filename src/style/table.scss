@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+$table-border-color: lighten(#4c556b, 53%);
+
+.table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+
+  td{
+    width: 2%;
+    padding: 10px 0 10px 0;
+    border-bottom: solid $table-border-color 1px;
+  }
+
+  th{
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    text-align: left;
+    border-bottom: solid $table-border-color 1px;
+  }
+
+  caption{
+    font-weight: bold;
+    margin: 0 0 -1px 0;
+    padding: 10px 0 10px 0;
+    border-bottom: solid $table-border-color 1px;
+  }
+}
