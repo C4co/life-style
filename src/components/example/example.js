@@ -12,7 +12,7 @@ const ExampleCenter = styled.section`
   justify-content: center;
   align-items: center;
   margin: 0 0 0 0;
-  border: solid ${styleGuide.borderColor} 3px;
+  border: solid ${styleGuide.borderColor} 1px;
   border-bottom: none;
 `
 
@@ -21,7 +21,11 @@ const ExampleTitle = styled.h1`
   font-size: 0.9em;
   text-transform: capitalize;
   display: flex;
-  margin: 0 0 5px 0;
+  margin: 0 0 0 0;
+  background: ${styleGuide.contrast};
+  padding: 10px 10px 5px 10px;
+  border: solid ${styleGuide.borderColor} 1px;
+  border-bottom: none;
 
   i{
     font-size: 23px;
@@ -31,26 +35,20 @@ const ExampleTitle = styled.h1`
 `
 
 const ExampleCode = styled.div`
-  background: #1e2329;
-  border-radius: 0 0 3px 3px;
+  background: ${styleGuide.contrast};
+  border-radius: 0 0 5px 5px;
   padding: 10px 10px 10px 10px;
   color: #96aece;
   font-size: 0.9em;
   line-height: 1.6em;
   font-family: monospace;
   overflow: auto;
-`
+  border: solid ${styleGuide.borderColor} 1px;
 
-const showDescription = description => {
-  const ExampleDescription = styled.p`
-    margin: 0 0 10px 0;
-    font-size: 0.9em;
-    text-transform: capitalize;
-  `
-  if (description) {
-    return (<ExampleDescription> { description } </ExampleDescription>)
+  pre{
+    color: #7b7b7b;
   }
-}
+`
 
 const showTitle = title => {
   if(title) {
@@ -76,7 +74,6 @@ const Example = ({children, ...props}) => {
   return (
     <ExampleWrapper>
       { showTitle(props.title) }
-      { showDescription(props.description) }
       <ExampleCenter> {children || 'Inset your example'} </ExampleCenter>
       { showCode(props.code) }
     </ExampleWrapper>

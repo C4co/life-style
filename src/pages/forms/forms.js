@@ -84,7 +84,6 @@ const Forms = ({childrens, ...props}) => (
         <div dangerouslySetInnerHTML={{ __html: radios }} />
       </Example>
     </Block>
-
   </Page>
 )
 

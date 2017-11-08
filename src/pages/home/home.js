@@ -39,7 +39,6 @@ const Home = ({children, ...props}) => (
   <Block title='Example'>
     <Example
       title='Default Button'
-      description='this is the description of my component'
       code={buttonCodeExample}>
       <button class='btn'> Hello </button>
     </Example>

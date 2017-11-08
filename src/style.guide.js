@@ -1,5 +1,5 @@
 export default {
-  borderColor: '#ececec',
-  primaryColor: '#1d2229',
-  exampleBackground: '#f3f3f3'
+  borderColor: '#dedede',
+  primaryColor: '#0066ff',
+  contrast: '#f5f5f5'
 }

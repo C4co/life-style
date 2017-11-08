@@ -7,8 +7,8 @@ const AlertElement = styled.div`
   padding: 10px;
   display: flex;
   border-radius: 3px;
-  background: #1e2329;
   margin: 0 0 20px 0;
+  color: #fff;
 
   i{
     margin: -4px 10px 0 0;
@@ -17,19 +17,19 @@ const AlertElement = styled.div`
 `
 
 const AlertInfo = AlertElement.extend`
-  color: #57ace7;
+  background-color: #2597e6;
 `
 
 const AlertError = AlertElement.extend`
-  color: #dc6e77;
+  background-color: #db3844;
 `
 
 const AlertWarn = AlertElement.extend`
-  color: #ecbc8d;
+  background-color: #e68c34;
 `
 
 const AlertSuccess = AlertElement.extend`
-  color: #7acaa2;
+  background-color: #1fb669;
 `
 
 const Alert = ({children, ...props}) => {

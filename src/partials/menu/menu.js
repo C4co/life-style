@@ -17,10 +17,10 @@ const MenuWrapper = styled.nav`
 const MenuItem = styled.div`
   a{
     display: block;
-    padding: 4px 20px 4px 20px;
+    padding: 4px 15px 4px 15px;
     font-size: 0.9em;
     margin: 0 0 10px 0;
-    border-radius: 30px;
+    border-radius: 3px;
     transition: all 0.2s linear 0s;
 
     &:hover{
