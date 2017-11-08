@@ -6,24 +6,18 @@
 $link-color: #06f;
 $font-color: #4c556b;
 
-//Selection
-$selection-background-color: #008cff;
-$selection-font-color: #fff;
-
 //Lines
 $line-background-color: #fff;
-$line-border-color: lighten(#4c556b, 52%);
+$line-border-color: #e8e8e8;
 
 body,
 html{
-  //font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-family: 'Noto Sans', sans-serif;
-  font-size: .97em;
+  font-size: .95em;
   font-smooth: auto;
   line-height: 1.6em;
   word-wrap: break-word;
   color: $font-color;
-
   -webkit-font-smoothing: none;
 }
 
@@ -34,36 +28,45 @@ p{
 h1{
   font-size: 2em;
   line-height: 1.2em;
-  margin: 0 0 20px 0;
 }
 
 h2{
   font-size: 1.8em;
   line-height: 1.3em;
-  margin: 0 0 20px 0;
 }
 
 h3{
   font-size: 1.6em;
   line-height: 1.3em;
-  margin: 0 0 20px 0;
 }
 
 h4{
   font-size: 1.4em;
   line-height: 1.5em;
-  margin: 0 0 20px 0;
 }
 
 h5{
   font-size: 1.2em;
   line-height: 1.5em;
-  margin: 0 0 20px 0;
 }
 
 h6{
   font-size: 1em;
   line-height: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0 0 20px 0;
+}
+
+ul{
+  padding-left: 20px;
+  list-style: disc;
+  margin: 0 0 20px 0;
+}
+
+ol{
+  padding-left: 20px;
   margin: 0 0 20px 0;
 }
 
@@ -71,6 +74,7 @@ blockquote{
   font-style: oblique;
   line-height: 1.8em;
   padding: 0 0 0 10px;
+  margin: 0 0 20px 0;
   border-left: solid $line-border-color 5px;
 }
 
@@ -85,15 +89,6 @@ a{
   &:active{
     color: darken( $link-color, 20% );
   }
-}
-
-ul{
-  padding-left: 20px;
-  list-style: disc;
-}
-
-ol{
-  padding-left: 20px;
 }
 
 hr{
@@ -113,7 +108,7 @@ small{
 }
 
 mark{
-  padding: 2px 5px 2px 5px;
+  padding: 1px 7px 1px 7px;
   color: $font-color;
   border-radius: 1px;
   background: lighten($link-color, 40%);
