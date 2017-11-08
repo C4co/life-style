@@ -18,7 +18,7 @@ const BlockWrapper = styled.section`
 
 const Block = ({children, ...props}) => (
   <BlockWrapper>
-    <BlockTitle> {props.title} </BlockTitle>
+    <BlockTitle> {props.title || 'title'} </BlockTitle>
     <BlockContent> {children} </BlockContent>
   </BlockWrapper>
 )
