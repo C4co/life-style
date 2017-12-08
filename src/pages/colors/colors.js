@@ -21,8 +21,8 @@ class Colors extends Component{
   render(){
     return (
       <Page title='Colors' description='Colors configuration'>
-        <Block title='Main color Pallet'>
-          <Pallet>
+        <Block title='Colors'>
+          <Pallet title='Main pallet color'>
             <Color name="#33c5a0" var="$success-color" />
             <Color name="#2197cf" var="$info-color" />
             <Color name="#dc3030" var="$error-color" />

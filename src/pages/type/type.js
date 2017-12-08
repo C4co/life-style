@@ -2,7 +2,7 @@ import {h, render, Component} from 'preact'
 import getFile from 'helpers/files'
 
 import Block from 'components/block/block'
-import {CodeBlock} from 'components/code/code'
+import {CodeBlock, CodeLine} from 'components/code/code'
 import {Pallet, Color} from 'components/color/color'
 
 import Page from 'layouts/page/page'
@@ -24,7 +24,7 @@ class Type extends Component{
     return (
       <Page title='Typography' description='typography configuration'>
         <Block title='Paragraph'>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laboriosam eum placeat, harum sint quae, impedit laborum perferendis ad consequuntur odio qui itaque deserunt quia aut atque reprehenderit ut cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti excepturi illo doloribus commodi sequi, ullam pariatur omnis unde ut delectus natus nobis, quibusdam quas fugiat ab.
+          <p>  <CodeLine>console.log('hello world')</CodeLine> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laboriosam eum placeat, harum sint quae, impedit laborum perferendis ad consequuntur odio qui itaque deserunt quia aut atque reprehenderit ut cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti excepturi illo doloribus commodi sequi, ullam pariatur omnis unde ut delectus natus nobis, quibusdam quas fugiat ab.
           </p>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus laboriosam eum placeat, harum sint quae, impedit laborum perferendis ad consequuntur odio qui itaque deserunt quia aut atque reprehenderit ut cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti excepturi illo doloribus commodi sequi, ullam pariatur omnis unde ut delectus natus nobis, quibusdam quas fugiat ab.
           </p>

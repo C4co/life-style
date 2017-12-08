@@ -6,7 +6,7 @@ import Image from 'components/image/image'
 const Images = ({children, ...props}) => (
   <Page title='Images' description='Lifestyle images'>
     <Block title='Logo'>
-      <Image src='assets/lifestyle-dark.svg' title='lifestyle logo'></Image>
+      <Image src='assets/lifestyle-dark.svg' />
     </Block>
   </Page>
 )

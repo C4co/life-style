@@ -1,11 +1,23 @@
 import styled from 'styled-components'
 import {h} from 'preact'
 
-const Pallet = styled.section`
+const PalletContent = styled.section`
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 10px);
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
+`
+
+const PalletTitle = styled.h1`
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  display: flex;
+
+  i{
+    margin: -4px 5px 0 0;
+    font-size: 24px;
+  }
 `
 
 const ColorTitle = styled.div`
@@ -35,6 +47,18 @@ const ColorWrapper = styled.div`
   @media (max-width: 850px) { width: calc(100%/2 - 10px); }
   @media (max-width: 400px) { width: calc(100%/1 - 10px); }
 `
+
+const Pallet = ({children, ...props}) => (
+  <div>
+    <PalletTitle>
+      <i class="material-icons">palette</i>
+      { props.title || 'Pallet title' }
+    </PalletTitle>
+    <PalletContent>
+      { children }
+    </PalletContent>
+  </div>
+)
 
 const Color = ({children, ...props}) => (
   <ColorWrapper bg={ props.name } >

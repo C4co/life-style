@@ -12,7 +12,6 @@ const MenuWrapper = styled.nav`
 
   @media (max-width: 800px) {
     margin-left: ${props => props.margin};
-    border-right: solid ${styleGuide.borderColor} 1px;
   }
 `
 

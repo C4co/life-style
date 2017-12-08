@@ -1,3 +1,4 @@
+const dotenv = require('dotenv').config()
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
@@ -8,7 +9,9 @@ const fileModule = require('./webpack-modules/file.module.js')
 const urlModule = require('./webpack-modules/url.module.js')
 const server = require('./webpack.server.js')
 const base = require('./webpack.base.js')
-const Dotenv = require('dotenv-webpack')
+const DotenvWebpack = require('dotenv-webpack')
+
+console.log('\x1b[1;96m%s\x1b[0m', `${process.env.APP_NAME}: DEVELOPMENT MODE`)
 
 module.exports = {
   entry: base.entry,
@@ -16,7 +19,7 @@ module.exports = {
   resolve: base.resolve,
 
   plugins: [
-    new Dotenv({
+    new DotenvWebpack({
       path: './.env',
       safe: true
     }),

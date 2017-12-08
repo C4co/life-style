@@ -35,9 +35,11 @@ const CodeBlockTitle = styled.p`
 `
 
 const CodeLine = styled.span`
-  padding: 4px 10px 4px 10px;
+  padding: 5px 10px 4px 10px;
   margin: 0 3px 0 3px;
   border-radius: 3px;
+  position: relative;
+  top: -3px;
   background: ${styleGuide.contrast};
   border: solid ${styleGuide.borderColor} 1px;
   color: #0000ff;
