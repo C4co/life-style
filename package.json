@@ -13,7 +13,8 @@
     "globals": "npm install -g csscomb standard protractor codeceptjs webpack codeceptjs-webdriverio selenium-standalone@latest",
     "test": "jest --watch --coverage --verbose",
     "test:once": "jest --coverage --verbose",
-    "test:e2e": "codeceptjs run --steps"
+    "test:e2e": "codeceptjs run --steps",
+    "new:page": "node generator/generator.js"
   },
   "standard": {
     "globals": [
@@ -75,7 +76,7 @@
     "browser-sync-webpack-plugin": "^1.2.0",
     "connect-modrewrite": "^0.10.2",
     "css-loader": "^0.28.7",
-    "directory-named-webpack-plugin": "^2.2.3",
+    "directory-named-webpack-plugin": "^2.3.0",
     "dotenv": "^4.0.0",
     "dotenv-webpack": "^1.5.4",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -84,23 +85,24 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
-    "node-sass": "^4.6.0",
+    "node-sass": "^4.7.2",
     "postcss-color-function": "^4.0.1",
-    "postcss-loader": "^2.0.8",
+    "postcss-loader": "^2.0.9",
     "precss": "^2.0.0",
-    "rucksack-css": "^1.0.2",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "svg-inline-loader": "^0.8.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.10.0"
   },
   "dependencies": {
     "linkstate": "^1.1.0",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7",
+    "preact-router": "^2.6.0",
     "prop-types": "^15.6.0",
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.2.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "bugs": {
     "url": "https://github.com/C4co/webpack-init/issues"
