@@ -7,32 +7,26 @@ const MenuWrapper = styled.nav`
   width: 100%;
   min-width: 200px;
   max-width: 200px;
-  padding: 18px 10px 0 10px;
+  padding: 40px 10px 0 10px;
   transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-right: solid ${styleGuide.borderColor} 1px;
 
-  @media (max-width: 800px) { margin-left: ${props => props.margin}; }
+  @media (max-width: 800px) {
+    margin-left: ${props => props.margin};
+    border-right: solid ${styleGuide.borderColor} 1px;
+  }
 `
 
 const MenuItem = styled.div`
   a{
     display: block;
-    padding: 4px 15px 4px 15px;
+    padding: 0 10px 0 10px;
     font-size: 0.9em;
-    margin: 0 0 10px 0;
-    border-radius: 3px;
+    margin: 0 0 15px 0;
     transition: all 0.2s linear 0s;
-
-    &:hover{
-      text-decoration: none;
-      background: #ebebeb;
-    }
   }
 
   a.menu--actived{
-    color: #fff;
-    background: ${styleGuide.primaryColor};
-    transition: all 0.2s linear 0s;
+    border-left: solid ${styleGuide.primaryColor} 5px;
   }
 `
 
@@ -79,6 +73,10 @@ class Menu extends Component{
           <Link activeClassName="menu--actived" href="/"> Home </Link>
           <Link activeClassName="menu--actived" href="/type"> Typography </Link>
           <Link activeClassName="menu--actived" href="/forms"> Forms </Link>
+          <Link activeClassName="menu--actived" href="/colors"> Colors </Link>
+          <Link activeClassName="menu--actived" href="/buttons"> Buttons </Link>
+          <Link activeClassName="menu--actived" href="/tables"> Tables </Link>
+          <Link activeClassName="menu--actived" href="/images"> Images </Link>
         </MenuItem>
       </MenuWrapper>
     )

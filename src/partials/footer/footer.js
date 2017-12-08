@@ -3,7 +3,6 @@ import {h} from 'preact'
 import styleGuide from 'style.guide'
 
 const FooterWrapper = styled.footer`
-  border-top: solid ${styleGuide.borderColor} 1px;
   display: flex;
   height: 80px;
   justify-contente: center;

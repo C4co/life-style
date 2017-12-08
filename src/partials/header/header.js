@@ -5,7 +5,7 @@ import {MenuButton} from 'partials/menu/menu'
 
 const HeaderWrapper = styled.header`
   height: 60px;
-  border-bottom: solid ${styleGuide.borderColor} 1px;
+  background: ${styleGuide.primaryColor};
 `
 
 const HeaderInside = styled.div`

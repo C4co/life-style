@@ -22,15 +22,15 @@ const ExampleTitle = styled.h1`
   text-transform: capitalize;
   display: flex;
   margin: 0 0 0 0;
+  font-weight: normal;
   background: ${styleGuide.contrast};
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 7px 10px;
   border: solid ${styleGuide.borderColor} 1px;
   border-bottom: none;
 
   i{
     font-size: 23px;
-    margin: -4px 7px 0 0;
-    opacity: 0.3;
+    margin: -3px 7px 0 0;
   }
 `
 
@@ -70,11 +70,14 @@ const showCode = code => {
   }
 }
 
+
 const Example = ({children, ...props}) => {
   return (
     <ExampleWrapper>
       { showTitle(props.title) }
-      <ExampleCenter> {children || 'Inset your example'} </ExampleCenter>
+      <ExampleCenter>
+        <div dangerouslySetInnerHTML={{ __html: props.code }} />
+      </ExampleCenter>
       { showCode(props.code) }
     </ExampleWrapper>
   )

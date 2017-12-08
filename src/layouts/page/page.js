@@ -11,7 +11,7 @@ const PageHeader = styled.section`
 `
 
 const PageTitle = styled.h1`
-  font-size: 2em;
+  font-size: 1.7em;
   text-transform: uppercase;
   margin: 0 0 10px 0;
 `

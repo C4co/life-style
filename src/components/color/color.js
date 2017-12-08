@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {h} from 'preact'
 
-const Palette = styled.section`
+const Pallet = styled.section`
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 10px);
@@ -46,6 +46,6 @@ const Color = ({children, ...props}) => (
 )
 
 export {
-  Palette,
+  Pallet,
   Color
 }

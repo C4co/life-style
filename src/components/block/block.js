@@ -7,6 +7,7 @@ const BlockTitle = styled.h6`
   margin: 0 auto 20px auto;
   padding: 0 0 15px 0;
   text-transform: uppercase;
+  font-weight: bold;
 `
 
 const BlockContent = styled.div`
