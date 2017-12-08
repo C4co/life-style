@@ -1,4 +1,4 @@
-# Life Style
+# Lifestyle
 
 Lifestyle is a component based project to documentation your own styleguide.
 
