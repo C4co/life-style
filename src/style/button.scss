@@ -2,8 +2,9 @@
    Button
    ========================================================================== */
 
-$button-background: #4c556b;
+$button-background: #41495b;
 $button-color: #fff;
+$button-border-color: darken($button-background, 20%);
 
 button,
 input[type=submit]{
@@ -12,21 +13,18 @@ input[type=submit]{
 
 .btn{
   font-family: inherit;
-  font-size: .78em;
-  font-weight: bold;
   display: inline-block;
-  min-width: 120px;
-  height: 30px;
+  height: 37px;
   margin: 0 0 5px 0;
-  padding: 0;
+  padding: 0 20px 0 20px;
   cursor: pointer;
   transition: border .1s linear 0s;
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
   color: $button-color;
-  border: none;
-  border-radius: 30px;
+  font-size: 0.94em;
+  border: solid $button-border-color 1px;
+  border-radius: 3px;
   background: $button-background;
 
   &:hover{
@@ -41,12 +39,12 @@ input[type=submit]{
 }
 
 a.btn{
-  line-height: 29px;
+  line-height: 36px;
 }
 
 button.btn[disabled],
 a.btn[disabled],
 input[type=submit].btn[disabled]{
   cursor: no-drop;
-  background: lighten($button-background, 40%);
+  opacity: 0.4;
 }
