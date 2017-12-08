@@ -2,6 +2,8 @@ import {h, render, Component} from 'preact'
 import Page from 'layouts/page/page'
 import Block from 'components/block/block'
 import Example from 'components/example/example'
+import {CodeBlock} from 'components/code/code'
+import getFile from 'helpers/files'
 
 const inputTextExample = `
 <label for='first'> text input </label>
@@ -14,7 +16,7 @@ const inputTextPassword = `
 `
 
 const textArea = `
-<label for='third' for='second'> password input </label>
+<label for='third' for='second'> Textarea </label>
 <textarea id='third' class='form-control' placeholder='this is my text area'></textarea>
 `
 
@@ -28,63 +30,102 @@ const select = `
 `
 
 const checkbox = `
-<div>
-  <input id='first-check' type='checkbox' class='form-checkbox'>
-  <label for='first-check'> Checkbox </label>
+<div class='form-checkbox'>
+  <input id='first-check' type='checkbox'>
+  <label for='first-check'> First </label>
+</div>
+
+<div class='form-checkbox'>
+  <input id='second-check' type='checkbox'>
+  <label for='second-check'> Second </label>
+</div>
+
+<div class='form-checkbox'>
+  <input id='third-check' type='checkbox'>
+  <label for='third-check'> Third </label>
 </div>
 `
 
 const radios = `
-<div>
-  <input id='first-radio' type='radio' class='form-radio'>
-  <label for='first-radio'> Radio button </label>
+<div class="form-radio">
+  <input id='first-radio' type='radio' name='group' checked>
+  <label for='first-radio'> First button </label>
 </div>
+
+<div class='form-radio'>
+  <input id='second-radio' type='radio' name='group'>
+  <label for='second-radio'> Second button </label>
+</div>
+
+<div class='form-radio'>
+  <input id='third-radio' type='radio' name='group'>
+  <label for='third-radio'> Third button </label>
+</div>
+
 `
 
-const Forms = ({childrens, ...props}) => (
-  <Page title='forms' description='Forms configuration'>
-    <Block title='inputs'>
-      <Example
-        title='input text'
-        code={inputTextExample}>
-        <div dangerouslySetInnerHTML={{ __html: inputTextExample }} />
-      </Example>
+class Forms extends Component{
+  constructor(){
+    super()
 
-      <Example
-        title='input password'
-        code={inputTextPassword}>
-        <div dangerouslySetInnerHTML={{ __html: inputTextPassword }} />
-      </Example>
+    this.state.formSass = ""
+    this.state.checkboxSass = ""
+    this.state.radioSass = ""
+  }
 
-      <Example
-        title='textarea'
-        code={textArea}>
-        <div dangerouslySetInnerHTML={{ __html: textArea }} />
-      </Example>
+  componentDidMount(){
+    getFile('./src/style/form.scss')
+      .then(res => {
+        this.setState({ formSass: res })
+      })
 
-      <Example
-        title='select'
-        code={select}>
-        <div dangerouslySetInnerHTML={{ __html: select }} />
-      </Example>
-    </Block>
+    getFile('./src/style/checkbox.scss')
+      .then(res => {
+        this.setState({ checkboxSass: res })
+      })
 
-    <Block title='Checkbox'>
-      <Example
-        title='checkbox'
-        code={checkbox}>
-        <div dangerouslySetInnerHTML={{ __html: checkbox }} />
-      </Example>
-    </Block>
+    getFile('./src/style/radio.scss')
+      .then(res => {
+        this.setState({ radioSass: res })
+      })
+  }
 
-    <Block title='Radio button'>
-      <Example
-        title='radio'
-        code={radios}>
-        <div dangerouslySetInnerHTML={{ __html: radios }} />
-      </Example>
-    </Block>
-  </Page>
-)
+  render(){
+    return (
+      <Page title='forms' description='Forms configuration'>
+        <Block title='inputs'>
+          <Example title='input text' code={inputTextExample} />
+          <Example title='input password' code={inputTextPassword} />
+          <Example title='textarea' code={textArea} />
+          <Example title='select' code={select} />
+        </Block>
+
+        <Block title='Checkbox'>
+          <Example title='checkbox' code={checkbox} />
+        </Block>
+
+        <Block title='Radio button'>
+          <Example title='radio' code={radios} />
+        </Block>
+
+        <Block title='Implementation'>
+          <CodeBlock title='form.scss'>
+            {`${this.state.formSass}`}
+          </CodeBlock>
+
+          <CodeBlock title='checkbox.scss'>
+            {`${this.state.checkboxSass}`}
+          </CodeBlock>
+
+          <CodeBlock title='radio.scss'>
+            {`${this.state.radioSass}`}
+          </CodeBlock>
+        </Block>
+
+      </Page>
+    )
+  }
+}
+
 
 export default Forms
