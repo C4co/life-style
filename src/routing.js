@@ -1,3 +1,4 @@
+import {h} from 'preact'
 import Home from 'pages/home/home'
 import Type from 'pages/type/type'
 import Forms from 'pages/forms/forms'
