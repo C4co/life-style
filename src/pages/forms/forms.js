@@ -61,7 +61,6 @@ const radios = `
   <input id='third-radio' type='radio' name='group'>
   <label for='third-radio'> Third button </label>
 </div>
-
 `
 
 class Forms extends Component{
