@@ -1,5 +1,7 @@
 # Lifestyle
 
+[![Build Status](https://travis-ci.org/C4co/lifestyle.svg?branch=master)](https://travis-ci.org/C4co/lifestyle)
+
 Lifestyle is a component based project to documentation your own styleguide.
 
 ### Stack
