@@ -14,7 +14,8 @@
     "test": "jest --watch --coverage --verbose",
     "test:once": "jest --coverage --verbose",
     "test:e2e": "codeceptjs run --steps",
-    "new:page": "node generator/generator.js"
+    "new:page": "node generator/generator.js",
+    "standard": "standard 'src/*.js' --fix"
   },
   "standard": {
     "globals": [
