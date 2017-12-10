@@ -13,6 +13,7 @@ input[type=submit]{
 
 .btn{
   font-family: inherit;
+  font-size: .94em;
   display: inline-block;
   height: 37px;
   margin: 0 0 5px 0;
@@ -22,7 +23,6 @@ input[type=submit]{
   text-align: center;
   vertical-align: middle;
   color: $button-color;
-  font-size: 0.94em;
   border: solid $button-border-color 1px;
   border-radius: 3px;
   background: $button-background;
@@ -46,5 +46,5 @@ button.btn[disabled],
 a.btn[disabled],
 input[type=submit].btn[disabled]{
   cursor: no-drop;
-  opacity: 0.4;
+  opacity: .4;
 }

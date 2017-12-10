@@ -18,9 +18,9 @@ $disabled-background: lighten(#4c556b, 61%);
 /* Fieldset and label
    ========================================================================== */
 label{
+  font-weight: bold;
   display: inline-block;
   margin: 0 0 5px 0;
-  font-weight: bold;
 }
 
 fieldset{
