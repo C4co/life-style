@@ -4,7 +4,7 @@ Scenario('Looking for all defined pages', (I) => {
   I.wait(10)
 
   I.amOnPage('/')
-  I.see('Hello')
+  I.see('LIFESTYLE')
   I.wait(1)
 
   I.amOnPage('/type')
