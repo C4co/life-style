@@ -8,7 +8,7 @@ script:
   - npm run start:ci &
   - npm run build
   - npm run test:once
-  - npm run test:e2e
+  # - npm run test:e2e
 env:
   global:
     - APP_NAME="Lifestyle"

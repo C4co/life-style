@@ -1,11 +1,9 @@
 Feature('Pages suite')
 
 Scenario('Looking for all defined pages', (I) => {
-  // I.amOnPage('/')
-  // I.see('Hello')
-  // I.wait(1)
-
-  I.wait(3)
+  I.amOnPage('/')
+  I.see('Hello')
+  I.wait(1)
 
   I.amOnPage('/type')
   I.see('TYPOGRAPHY')
