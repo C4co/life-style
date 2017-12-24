@@ -4,12 +4,16 @@
 
 Lifestyle is a component based project to documentation your own styleguide.
 
+[Live project](https://lifestyle.netlify.com/)
+
 ### Stack
 
 + [Webpack](https://webpack.js.org/)
 + [Preact](https://preactjs.com/)
 + [Babel](https://babeljs.io/)
 + [Jest](https://facebook.github.io/jest/)
++ [Codecept](http://codecept.io/)
++ [puppeteer](https://github.com/GoogleChrome/puppeteer)
 
 ### First Steps
 
