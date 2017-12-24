@@ -14,7 +14,7 @@
     "globals": "npm install -g csscomb standard puppeteer codeceptjs-puppeteer codeceptjs webpack",
     "test": "jest --watch --coverage --verbose",
     "test:once": "jest --coverage --verbose",
-    "test:e2e": "codeceptjs run --steps",
+    "test:e2e": "codeceptjs run --steps --verbose",
     "new:page": "node generator/generator.js",
     "standard": "standard 'src/*.js' --fix"
   },
