@@ -5,7 +5,7 @@ install:
   - npm install
   - npm run globals
 script:
-  - npm run start:ci
+  - npm run start:ci &
   - npm run build
   - npm run test:once
   - npm run test:e2e
