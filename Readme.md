@@ -71,3 +71,8 @@ Only once:
 ```
 $ npm run test:once
 ```
+
+End to End
+```
+$ npm run test:e2e
+```
