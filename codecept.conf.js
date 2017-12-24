@@ -7,11 +7,9 @@ exports.config = {
   'timeout': 10000,
   'output': './.output',
   'helpers': {
-    'WebDriverIO': {
+    'Puppeteer': {
       'url': `${process.env.DOMAIN}`,
-      'browser': 'chrome',
-      'restart': false,
-      'windowSize': 'maximize'
+      'show': false
     }
   },
   'include': {},
