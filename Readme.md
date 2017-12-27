@@ -1,5 +1,4 @@
-
-<img width=100 src="https://dl.dropboxusercontent.com/content_link/WxVtfgUBhZgMJqGNbNZrfGlTwaEyKQPT3nQKMG7p4Xf5XahwpJUDJQjQa3QDXRTM/file?dl=1">
+<img width=80 src="https://dl.dropboxusercontent.com/s/3it7i9rhuopkk7y/lifestyle-logo.png?dl=0">
 
 # Lifestyle
 
