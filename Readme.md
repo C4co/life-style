@@ -1,7 +1,6 @@
 
 <img width=100 src="https://dl.dropboxusercontent.com/content_link/WxVtfgUBhZgMJqGNbNZrfGlTwaEyKQPT3nQKMG7p4Xf5XahwpJUDJQjQa3QDXRTM/file?dl=1">
 
-
 # Lifestyle
 
 [![Build Status](https://travis-ci.org/C4co/lifestyle.svg?branch=master)](https://travis-ci.org/C4co/lifestyle)
