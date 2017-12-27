@@ -1,6 +1,4 @@
-<div style="text-align:center">
-  <img width=70 src="https://dl.dropboxusercontent.com/s/3it7i9rhuopkk7y/lifestyle-logo.png?dl=0">
-</div>
+<img width=70 src="https://dl.dropboxusercontent.com/s/3it7i9rhuopkk7y/lifestyle-logo.png?dl=0">
 
 # Lifestyle
 
