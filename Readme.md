@@ -1,4 +1,4 @@
-<p align='center'> 
+<p align='center'>
   <img width=100 src="https://dl.dropboxusercontent.com/s/3it7i9rhuopkk7y/lifestyle-logo.png?dl=0">
 </p>
 
@@ -63,7 +63,7 @@ $ npm run build
 
 [See all component](https://github.com/C4co/lifestyle/wiki)
 
-Create a new page:
+You can create a new page via comand line using:
 ```
 $ npm run new:page YOUR-PAGE-NAME
 ```

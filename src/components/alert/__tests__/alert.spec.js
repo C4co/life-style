@@ -13,25 +13,16 @@ describe('Alert suite', () => {
 
   it('Should define Alert component type error', () => {
     const info = render(<Alert type='error'> this is my error alert </Alert>)
-
-    expect(info).toMatch('div')
-    expect(info).toMatch('i')
     expect(info).toMatch('this is my error alert')
   })
 
   it('Should define Alert component type warn', () => {
     const info = render(<Alert type='warn'> this is my warn alert </Alert>)
-
-    expect(info).toMatch('div')
-    expect(info).toMatch('i')
     expect(info).toMatch('this is my warn alert')
   })
 
   it('Should define Alert component type success', () => {
     const info = render(<Alert type='success'> this is my success alert </Alert>)
-
-    expect(info).toMatch('div')
-    expect(info).toMatch('i')
     expect(info).toMatch('this is my success alert')
   })
 })
