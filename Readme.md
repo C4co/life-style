@@ -5,6 +5,8 @@
 # Lifestyle
 
 [![Build Status](https://travis-ci.org/C4co/lifestyle.svg?branch=master)](https://travis-ci.org/C4co/lifestyle)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ada996ffdfe68ab379cc/maintainability)](https://codeclimate.com/github/C4co/lifestyle/maintainability)
 
 Lifestyle is a component based project to documentation your own styleguide.
 
