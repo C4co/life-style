@@ -1,19 +1,12 @@
 language: node_js
 node_js:
   - "9"
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 install:
   - npm install
   - npm run install:global
 script:
   - npm run build
   - npm run test:once
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 env:
   global:
-    - CC_TEST_REPORTER_ID=962a627b6b8888fe3aabb5ac6e7b7e50dddf7840392b8d25f26c06711113a6db
     - APP_NAME=Lifestyle
