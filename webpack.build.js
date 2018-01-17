@@ -8,7 +8,6 @@ const sassModule = require('./webpack-modules/sass.module.js')
 const fileModule = require('./webpack-modules/file.module.js')
 const urlModule = require('./webpack-modules/url.module.js')
 const base = require('./webpack.base.js')
-const Dotenv = require('dotenv-webpack')
 
 console.log('\x1b[1;96m%s\x1b[0m', `${process.env.APP_NAME}: BUILD MODE`)
 
@@ -18,11 +17,6 @@ module.exports = {
   resolve: base.resolve,
 
   plugins: [
-    new Dotenv({
-      path: './.env',
-      safe: true
-    }),
-
     new webpack.optimize.AggressiveMergingPlugin(),
 
     new webpack.optimize.UglifyJsPlugin({
