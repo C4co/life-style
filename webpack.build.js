@@ -39,7 +39,7 @@ module.exports = {
       staticFileGlobs: [
         'dist/**.*',
         'assets/**.*'
-      ],
+      ]
     }),
 
     new webpack.optimize.CommonsChunkPlugin({

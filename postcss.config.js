@@ -3,7 +3,7 @@
 module.exports = {
   plugins: [
     require('precss'),
-    require("postcss-color-function"),
-    require('autoprefixer')({ browsers: ['last 20 versions'] }),
+    require('postcss-color-function'),
+    require('autoprefixer')({ browsers: ['last 20 versions'] })
   ]
 }
