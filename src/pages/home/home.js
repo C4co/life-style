@@ -7,7 +7,7 @@ import Alert from 'components/alert/alert'
 const Home = ({children, ...props}) => (
   <Page
     title='Lifestyle'
-    description='Lifestyle is a component based project to documentation your own styleguide, the main goal is create somethig simple and easy to customization.'>
+    description='Lifestyle is a component based project to documentation your own style guide, the main goal is create something simple and easy to customization.'>
 
     <Block title='Components'>
       <h6> Current components: </h6>
