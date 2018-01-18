@@ -69,11 +69,11 @@ class Type extends Component{
 
         <Block title='Implementation'>
           <CodeBlock title='reset.scss'>
-            {`${this.state.resetSass}`}
+            {`${this.state.resetSass || '...loading'}`}
           </CodeBlock>
 
           <CodeBlock title='type.scss'>
-            {`${this.state.typeSass}`}
+            {`${this.state.typeSass || '...loading'}`}
           </CodeBlock>
         </Block>
 

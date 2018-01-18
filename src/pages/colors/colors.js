@@ -32,7 +32,7 @@ class Colors extends Component{
 
         <Block title='Implementation'>
           <CodeBlock title='colors.scss'>
-            {`${this.state.colorsSass}`}
+            {`${this.state.colorsSass || '...loading'}`}
           </CodeBlock>
         </Block>
       </Page>

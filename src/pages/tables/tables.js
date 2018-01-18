@@ -49,7 +49,7 @@ class Tables extends Component{
 
         <Block title='Implementation'>
           <CodeBlock title='table.scss'>
-            {`${this.state.tableSass}`}
+            {`${this.state.tableSass || '...loading'}`}
           </CodeBlock>
         </Block>
       </Page>

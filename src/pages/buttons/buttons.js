@@ -40,7 +40,7 @@ class Buttons extends Component{
 
         <Block title='Implementation'>
           <CodeBlock title='button.scss'>
-            {`${this.state.buttonSass}`}
+            {`${this.state.buttonSass || '...loading'}`}
           </CodeBlock>
         </Block>
       </Page>

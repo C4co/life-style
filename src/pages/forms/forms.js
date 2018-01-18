@@ -109,15 +109,15 @@ class Forms extends Component{
 
         <Block title='Implementation'>
           <CodeBlock title='form.scss'>
-            {`${this.state.formSass}`}
+            {`${this.state.formSass || '...loading'}`}
           </CodeBlock>
 
           <CodeBlock title='checkbox.scss'>
-            {`${this.state.checkboxSass}`}
+            {`${this.state.checkboxSass || '...loading'}`}
           </CodeBlock>
 
           <CodeBlock title='radio.scss'>
-            {`${this.state.radioSass}`}
+            {`${this.state.radioSass || '...loading'}`}
           </CodeBlock>
         </Block>
       </Page>
