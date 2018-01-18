@@ -26,7 +26,7 @@ Lifestyle is a component based project to documentation your own styleguide.
 ```
 $ git clone git@github.com:C4co/lifestyle.git myApp
 $ cd myApp
-$ rm -rf git && git init
+$ rm -rf .git && git init
 $ cp .env.example .env
 $ npm init
 ```
@@ -82,7 +82,7 @@ Only once:
 $ npm run test:once
 ```
 
-End to End
+End to End:
 ```
 $ npm run test:e2e
 ```
