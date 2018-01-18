@@ -3,7 +3,7 @@ node_js:
   - "9"
 install:
   - npm install
-  - npm run install:global
+  - npm run install:globals
 script:
   - npm run build
   - npm run test:once
