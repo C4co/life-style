@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "install:global": "npm install -g csscomb standard puppeteer codeceptjs-puppeteer codeceptjs webpack",
+    "install:globals": "npm install -g csscomb standard puppeteer codeceptjs-puppeteer codeceptjs webpack",
     "start": "webpack --config webpack.dev.js --watch --hide-modules",
     "start:ci": "webpack --config webpack.ci.js --watch --hide-modules",
     "build": "webpack --config webpack.build.js --optimize-minimize --hide-modules",
