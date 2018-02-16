@@ -86,3 +86,6 @@ End to End:
 ```
 $ npm run test:e2e
 ```
+---
+Licensed under the ISC License | 2018 - C4co
+
