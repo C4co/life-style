@@ -43,7 +43,7 @@ const CodeLine = styled.span`
   background: ${styleGuide.contrast};
   border: solid ${styleGuide.borderColor} 1px;
   color: #0000ff;
-  font-family: monospace;
+  font-family: consolas, monospace;
 `
 
 const syntax = children => {
