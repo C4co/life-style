@@ -1,9 +1,9 @@
 import {h, render, Component} from 'preact'
-import Page from 'layouts/page/page'
-import Block from 'components/block/block'
-import Example from 'components/example/example'
-import {CodeBlock} from 'components/code/code'
-import getFile from 'helpers/files'
+import Page from '../../layouts/page/page'
+import Block from '../../components/block/block'
+import Example from '../../components/example/example'
+import {CodeBlock} from '../../components/code/code'
+import getFile from '../../helpers/files'
 
 const inputTextExample = `
 <label for='first'> text input </label>

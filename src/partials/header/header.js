@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {h, render, Component} from 'preact'
-import styleGuide from 'style.guide'
-import {MenuButton} from 'partials/menu/menu'
+import styleGuide from '../../style.guide'
+import {MenuButton} from '../menu/menu'
 
 const HeaderWrapper = styled.header`
   height: 60px;

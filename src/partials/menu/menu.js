@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Link} from 'preact-router/match'
 import {h, render, Component} from 'preact'
-import styleGuide from 'style.guide'
+import styleGuide from '../../style.guide'
 
 const MenuWrapper = styled.nav`
   width: 100%;

@@ -2,7 +2,7 @@ import 'highlight.js/styles/github.css'
 import hljs from 'highlight.js'
 import {h, render, Component} from 'preact'
 import styled from 'styled-components'
-import styleGuide from 'style.guide'
+import styleGuide from '../../style.guide.js'
 
 const CodeBlockWrapper = styled.div`
   border: solid ${styleGuide.borderColor} 1px;
