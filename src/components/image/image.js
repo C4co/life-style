@@ -5,8 +5,14 @@ import styleGuide from 'style.guide'
 const patternBackground = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGklEQVQYlWO4d+/ef3TMgA0MBYWDzDkUKQQADFmz4yjA0qgAAAAASUVORK5CYII="
 
 const ImageWrapper = styled.div`
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto;
+  text-align: center;
+
+  img{
+    max-width: 650px;
+    margin: 0 auto;
+  }
 
   figure{
     border: solid ${styleGuide.borderColor} 1px;
