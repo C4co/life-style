@@ -1,10 +1,10 @@
 {
   "name": "life-style",
   "version": "1.0.0",
-  "description": "Webpack init",
+  "description": "Lifestyle",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/C4co/webpack-init.git"
+    "url": "git+https://github.com/C4co/lifestyle.git"
   },
   "main": "index.js",
   "scripts": {
@@ -86,15 +86,15 @@
     "puppeteer": "^1.1.1",
     "shelljs": "^0.8.1",
     "standard": "^11.0.0",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.2.0"
   },
   "dependencies": {
+    "preact": "^8.2.7",
     "preact-router": "^2.6.0",
-    "whatwg-fetch": "^2.0.3",
-    "preact": "^8.2.7"
+    "whatwg-fetch": "^2.0.3"
   },
   "bugs": {
-    "url": "https://github.com/C4co/webpack-init/issues"
+    "url": "https://github.com/C4co/lifestyle/issues"
   },
-  "homepage": "https://github.com/C4co/webpack-init#readme"
+  "homepage": "https://github.com/C4co/lifestyle#readme"
 }
