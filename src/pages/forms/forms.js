@@ -3,7 +3,6 @@ import Page from '../../layouts/page/page'
 import Block from '../../components/block/block'
 import Example from '../../components/example/example'
 import {CodeBlock} from '../../components/code/code'
-import getFile from '../../helpers/files'
 
 const inputTextExample = `
 <label for='first'> text input </label>
@@ -72,23 +71,6 @@ class Forms extends Component{
     this.state.radioSass = ""
   }
 
-  componentDidMount(){
-    getFile('./src/style/form.scss')
-      .then(res => {
-        this.setState({ formSass: res })
-      })
-
-    getFile('./src/style/checkbox.scss')
-      .then(res => {
-        this.setState({ checkboxSass: res })
-      })
-
-    getFile('./src/style/radio.scss')
-      .then(res => {
-        this.setState({ radioSass: res })
-      })
-  }
-
   render(){
     return (
       <Page title='forms' description='Forms configuration'>
@@ -105,20 +87,6 @@ class Forms extends Component{
 
         <Block title='Radio button'>
           <Example title='radio' code={radios} />
-        </Block>
-
-        <Block title='Implementation'>
-          <CodeBlock title='form.scss'>
-            {`${this.state.formSass || '...loading'}`}
-          </CodeBlock>
-
-          <CodeBlock title='checkbox.scss'>
-            {`${this.state.checkboxSass || '...loading'}`}
-          </CodeBlock>
-
-          <CodeBlock title='radio.scss'>
-            {`${this.state.radioSass || '...loading'}`}
-          </CodeBlock>
         </Block>
       </Page>
     )

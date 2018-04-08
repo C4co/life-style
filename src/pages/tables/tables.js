@@ -5,8 +5,6 @@ import Block from '../../components/block/block'
 import {CodeBlock} from '../../components/code/code'
 import Example from '../../components/example/example'
 
-import getFile from '../../helpers/files'
-
 const tablesExample = `
 <table class='table'>
   <caption> Example </caption>
@@ -35,22 +33,11 @@ class Tables extends Component{
     super()
   }
 
-  componentDidMount(){
-    getFile('./src/style/table.scss')
-      .then(res => { this.setState({ tableSass: res }) })
-  }
-
   render(){
     return(
       <Page title='Tables' description='Table configuration'>
         <Block title='Default table'>
           <Example title='Table' code={tablesExample} />
-        </Block>
-
-        <Block title='Implementation'>
-          <CodeBlock title='table.scss'>
-            {`${this.state.tableSass || '...loading'}`}
-          </CodeBlock>
         </Block>
       </Page>
     )

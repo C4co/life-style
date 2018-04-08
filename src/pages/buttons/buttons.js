@@ -6,8 +6,6 @@ import Example from '../../components/example/example'
 
 import Page from '../../layouts/page/page'
 
-import getFile from '../../helpers/files'
-
 const normalButtons = `
 <button class='btn'> Normal button </button>
 <a href="#" class='btn'> Link button </a>
@@ -25,23 +23,12 @@ class Buttons extends Component{
     super()
   }
 
-  componentDidMount(){
-    getFile('./src/style/button.scss')
-      .then(res => { this.setState({buttonSass: res}) })
-  }
-
   render(){
     return(
       <Page title='Buttons' description='Button configuration'>
         <Block title='Default buttons'>
           <Example title='Normal buttons' code={normalButtons} />
           <Example title='Disabled buttons' code={disabledButtons} />
-        </Block>
-
-        <Block title='Implementation'>
-          <CodeBlock title='button.scss'>
-            {`${this.state.buttonSass || '...loading'}`}
-          </CodeBlock>
         </Block>
       </Page>
     )

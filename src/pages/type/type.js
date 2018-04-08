@@ -1,5 +1,4 @@
 import {h, render, Component} from 'preact'
-import getFile from '../../helpers/files'
 
 import Block from '../../components/block/block'
 import {CodeBlock, CodeLine} from '../../components/code/code'
@@ -10,14 +9,6 @@ import Page from '../../layouts/page/page'
 class Type extends Component{
   constructor(props, state){
     super()
-  }
-
-  componentDidMount(){
-    getFile('./src/style/type.scss')
-      .then(res => { this.setState({ typeSass: res }) })
-
-    getFile('./src/style/reset.scss')
-      .then(res => { this.setState({ resetSass: res }) })
   }
 
   render(props, state){
@@ -66,17 +57,6 @@ class Type extends Component{
 
           <blockquote> blockquote - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam perferendis natus obcaecati impedit, illo voluptatem mollitia quas, beatae eos aliquid sequi culpa quasi ut asperiores iste incidunt, tenetur provident. Non! </blockquote>
         </Block>
-
-        <Block title='Implementation'>
-          <CodeBlock title='reset.scss'>
-            {`${this.state.resetSass || '...loading'}`}
-          </CodeBlock>
-
-          <CodeBlock title='type.scss'>
-            {`${this.state.typeSass || '...loading'}`}
-          </CodeBlock>
-        </Block>
-
       </Page>
     )
   }

@@ -6,16 +6,9 @@ import {CodeBlock} from '../../components/code/code'
 
 import Page from '../../layouts/page/page'
 
-import getFile from '../../helpers/files'
-
 class Colors extends Component{
   constructor(){
     super()
-  }
-
-  componentDidMount(){
-    getFile('./src/style/colors.scss')
-      .then(res => { this.setState({ colorsSass: res }) })
   }
 
   render(){
@@ -28,12 +21,6 @@ class Colors extends Component{
             <Color name="#dc3030" var="$error-color" />
             <Color name="#333844" var="$main-color" />
           </Pallet>
-        </Block>
-
-        <Block title='Implementation'>
-          <CodeBlock title='colors.scss'>
-            {`${this.state.colorsSass || '...loading'}`}
-          </CodeBlock>
         </Block>
       </Page>
     )
