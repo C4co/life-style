@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --port=3000",
-    "build": "parcel build index.html --out-dir dist --public-url ./ && workbox generate:sw && cp _redirects dist",
+    "build": "parcel build index.html --out-dir dist --public-url ./ && workbox generateSW && cp _redirects dist",
     "csscomb": "csscomb ./src/*.scss",
     "test": "jest --watch --coverage --verbose",
     "test:once": "jest --coverage --verbose",
@@ -86,7 +86,8 @@
     "puppeteer": "^1.2.0",
     "shelljs": "^0.8.1",
     "standard": "^11.0.1",
-    "styled-components": "^3.2.5"
+    "styled-components": "^3.2.5",
+    "workbox-cli": "^3.0.1"
   },
   "dependencies": {
     "preact": "^8.2.7",
