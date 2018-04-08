@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {h} from 'preact'
-import styleGuide from 'style.guide'
+import styleGuide from '../../style.guide'
 
 const FooterWrapper = styled.footer`
   display: flex;

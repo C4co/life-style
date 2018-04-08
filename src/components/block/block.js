@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {h} from 'preact'
-import styleGuide from 'style.guide'
+import styleGuide from '../../style.guide'
 
 const BlockTitle = styled.h6`
   border-bottom: solid ${styleGuide.borderColor} 1px;

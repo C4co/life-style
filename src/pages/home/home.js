@@ -1,8 +1,8 @@
 import {h, render, Component} from 'preact'
-import Page from 'layouts/page/page'
-import Block from 'components/block/block'
-import Image from 'components/image/image'
-import Alert from 'components/alert/alert'
+import Page from '../../layouts/page/page'
+import Block from '../../components/block/block'
+import Image from '../../components/image/image'
+import Alert from '../../components/alert/alert'
 
 const Home = ({children, ...props}) => (
   <Page

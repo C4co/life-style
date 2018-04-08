@@ -5,3 +5,4 @@ dist/
 sw.js
 .output/
 .env
+.cache

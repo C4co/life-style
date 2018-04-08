@@ -1,12 +1,12 @@
 import {h, render, Component} from 'preact'
 
-import Block from 'components/block/block'
-import {Pallet, Color} from 'components/color/color'
-import {CodeBlock} from 'components/code/code'
+import Block from '../../components/block/block'
+import {Pallet, Color} from '../../components/color/color'
+import {CodeBlock} from '../../components/code/code'
 
-import Page from 'layouts/page/page'
+import Page from '../../layouts/page/page'
 
-import getFile from 'helpers/files'
+import getFile from '../../helpers/files'
 
 class Colors extends Component{
   constructor(){

@@ -1,11 +1,11 @@
 import {h, render, Component} from 'preact'
-import getFile from 'helpers/files'
+import getFile from '../../helpers/files'
 
-import Block from 'components/block/block'
-import {CodeBlock, CodeLine} from 'components/code/code'
-import {Pallet, Color} from 'components/color/color'
+import Block from '../../components/block/block'
+import {CodeBlock, CodeLine} from '../../components/code/code'
+import {Pallet, Color} from '../../components/color/color'
 
-import Page from 'layouts/page/page'
+import Page from '../../layouts/page/page'
 
 class Type extends Component{
   constructor(props, state){

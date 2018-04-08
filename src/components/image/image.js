@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {h} from 'preact'
-import styleGuide from 'style.guide'
+import styleGuide from '../../style.guide'
 
 const patternBackground = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGklEQVQYlWO4d+/ef3TMgA0MBYWDzDkUKQQADFmz4yjA0qgAAAAASUVORK5CYII="
 

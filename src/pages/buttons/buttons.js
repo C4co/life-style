@@ -1,12 +1,12 @@
 import {h, render, Component} from 'preact'
 
-import Block from 'components/block/block'
-import {CodeBlock} from 'components/code/code'
-import Example from 'components/example/example'
+import Block from '../../components/block/block'
+import {CodeBlock} from '../../components/code/code'
+import Example from '../../components/example/example'
 
-import Page from 'layouts/page/page'
+import Page from '../../layouts/page/page'
 
-import getFile from 'helpers/files'
+import getFile from '../../helpers/files'
 
 const normalButtons = `
 <button class='btn'> Normal button </button>

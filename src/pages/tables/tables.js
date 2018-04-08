@@ -1,11 +1,11 @@
 import {h, render, Component} from 'preact'
-import Page from 'layouts/page/page'
+import Page from '../../layouts/page/page'
 
-import Block from 'components/block/block'
-import {CodeBlock} from 'components/code/code'
-import Example from 'components/example/example'
+import Block from '../../components/block/block'
+import {CodeBlock} from '../../components/code/code'
+import Example from '../../components/example/example'
 
-import getFile from 'helpers/files'
+import getFile from '../../helpers/files'
 
 const tablesExample = `
 <table class='table'>

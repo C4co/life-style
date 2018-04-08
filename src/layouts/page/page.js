@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import {h, render, Component} from 'preact'
-import Center from 'partials/center/center'
-import Header from 'partials/header/header'
-import Footer from 'partials/footer/footer'
-import Content from 'partials/content/content'
-import {Menu} from 'partials/menu/menu'
+import Center from '../../partials/center/center'
+import Header from '../../partials/header/header'
+import Footer from '../../partials/footer/footer'
+import Content from '../../partials/content/content'
+import {Menu} from '../../partials/menu/menu'
 
 const PageHeader = styled.section`
   margin: 0 0 60px 0;

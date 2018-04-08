@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import {h, render, Component} from 'preact'
-import styleGuide from 'style.guide'
-import {MenuButton} from 'partials/menu/menu'
+import styleGuide from '../../style.guide'
+import {MenuButton} from '../menu/menu'
+import lifeStyleLogo from '../../../assets/lifestyle.svg'
 
 const HeaderWrapper = styled.header`
   height: 60px;
@@ -30,7 +31,7 @@ const Header = () => (
   <HeaderWrapper>
     <HeaderInside>
       <Logo>
-        <img src="assets/lifestyle.svg" alt="logo"/>
+        <img src={lifeStyleLogo} alt="logo"/>
       </Logo>
     </HeaderInside>
   </HeaderWrapper>

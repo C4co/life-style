@@ -1,11 +1,11 @@
 import {h} from 'preact'
-import Home from 'pages/home/home'
-import Type from 'pages/type/type'
-import Forms from 'pages/forms/forms'
-import Colors from 'pages/colors/colors'
-import Buttons from 'pages/buttons/buttons'
-import Tables from 'pages/tables/tables'
-import Images from 'pages/images/images'
+import Home from './pages/home/home'
+import Type from './pages/type/type'
+import Forms from './pages/forms/forms'
+import Colors from './pages/colors/colors'
+import Buttons from './pages/buttons/buttons'
+import Tables from './pages/tables/tables'
+import Images from './pages/images/images'
 
 import Router from 'preact-router'
 

@@ -1,22 +1,25 @@
 {
   "name": "life-style",
-  "version": "1.0.1",
-  "description": "Webpack init",
+  "version": "2.0.0",
+  "description": "Lifestyle",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/C4co/webpack-init.git"
+    "url": "git+https://github.com/C4co/lifestyle.git"
   },
   "main": "index.js",
   "scripts": {
-    "install:globals": "npm install -g csscomb standard puppeteer codeceptjs-puppeteer codeceptjs webpack",
-    "start": "webpack --config webpack.dev.js --watch --hide-modules",
-    "start:ci": "webpack --config webpack.ci.js --watch --hide-modules",
-    "build": "webpack --config webpack.build.js --optimize-minimize --hide-modules",
+    "start": "parcel index.html --port=3000",
+    "build": "parcel build index.html --out-dir dist --public-url ./ && workbox generateSW && cp _redirects dist",
+    "csscomb": "csscomb ./src/*.scss",
     "test": "jest --watch --coverage --verbose",
     "test:once": "jest --coverage --verbose",
     "test:e2e": "codeceptjs run --steps",
     "new:page": "node gen/run.page.js",
     "standard": "standard 'src/*.js' --fix"
+  },
+  "alias": {
+    "react": "preact-compat",
+    "react-dom": "preact-compat"
   },
   "standard": {
     "globals": [
@@ -64,53 +67,36 @@
   "author": "Carlos costa - C4co",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
-    "babel-loader": "^7.1.2",
+    "babel-jest": "^22.4.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "babel-runtime": "^6.26.0",
-    "browser-sync": "^2.23.5",
-    "browser-sync-webpack-plugin": "^1.2.0",
-    "chalk": "^2.3.0",
-    "connect-modrewrite": "^0.10.2",
-    "css-loader": "^0.28.8",
-    "directory-named-webpack-plugin": "^2.3.0",
-    "dotenv": "^4.0.0",
-    "dotenv-webpack": "^1.5.4",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
+    "babel-preset-preact": "^1.1.0",
+    "chalk": "^2.3.2",
+    "codeceptjs": "^1.1.7",
+    "codeceptjs-puppeteer": "^1.1.0",
+    "csscomb": "^4.2.0",
+    "dotenv": "^5.0.1",
     "highlight.js": "^9.12.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.1.1",
-    "jest-cli": "^22.1.1",
-    "node-sass": "^4.7.2",
-    "postcss-loader": "^2.0.10",
+    "jest": "^22.4.3",
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.7.0",
+    "preact-compat": "^3.18.0",
     "preact-render-to-string": "^3.7.0",
-    "precss": "^2.0.0",
-    "raw-loader": "^0.5.1",
-    "sass-loader": "^6.0.6",
-    "shelljs": "^0.8.0",
-    "style-loader": "^0.19.1",
-    "svg-inline-loader": "^0.8.0",
-    "sw-precache-webpack-plugin": "^0.11.4",
-    "webpack": "^3.10.0"
+    "puppeteer": "^1.2.0",
+    "shelljs": "^0.8.1",
+    "standard": "^11.0.1",
+    "styled-components": "^3.2.5",
+    "workbox-cli": "^3.0.1"
   },
   "dependencies": {
     "preact": "^8.2.7",
-    "preact-compat": "^3.17.0",
     "preact-router": "^2.6.0",
-    "styled-components": "^2.4.0",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.4"
   },
   "bugs": {
-    "url": "https://github.com/C4co/webpack-init/issues"
+    "url": "https://github.com/C4co/lifestyle/issues"
   },
-  "homepage": "https://github.com/C4co/webpack-init#readme"
+  "homepage": "https://github.com/C4co/lifestyle#readme"
 }

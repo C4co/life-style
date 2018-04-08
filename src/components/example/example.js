@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import styleGuide from 'style.guide'
 import {h} from 'preact'
-import {syntax} from 'components/code/code'
+import {syntax} from '../code/code'
+import styleGuide from '../../style.guide.js'
 
 const ExampleWrapper = styled.div`
   margin: 0 0 40px 0;
