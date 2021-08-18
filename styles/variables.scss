@@ -1,5 +1,22 @@
+/*==============================
+  Variables
+================================*/
+
 :root{
+  // colors
   --primary-color: #3399ff;
   --font-title: #000000;
   --font-color: #333333;
+
+  // fonts
+  --font-default-size: 1em;
+  --font-family: "Inter", sans-serif;
+
+  // button
+  --button-background: black;
+  --button-color: white;
+  --button-hover-shadow: 0px 0px 6px 1px red;
+  --button-outline-background: white;
+  --button-outline-border: black;
+  --button-outline-color: black;
 }

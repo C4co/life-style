@@ -1,21 +1,25 @@
-# CN Next Starter
+# Lifestyle
 
-Next.js and typescript starter project
+>some css classes
 
-### Whats inside
-
-- NextJS
-- Typescript
-- Sass
-
-### New project
-
-```
-npx create-next-app --use-npm --example https://github.com/C4co/cn-next-starter
+#### Buttons
+```css
+  .buttons
+  .button
+  .button__full
+  .button__loading
+  .button__outline
 ```
 
----
-
-### License
+#### forms
+```css
+  .form
+  .form__divider
+  .label
+  .input
+  .input__error-message
+  .select
+  .textarea
+```
 
 MIT © [C4co](https://github.com/C4co)

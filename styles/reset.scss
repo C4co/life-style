@@ -1,3 +1,7 @@
+/*==============================
+  CSS Reset
+================================*/
+
 *,
 *:after,
 *:before {
@@ -13,8 +17,8 @@ img {
 
 html,
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
+  font-family: var(--font-family);
+  font-size: var(--font-default-size);
   overflow-x: hidden;
 
   @media (max-width: 800px) {

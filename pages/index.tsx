@@ -1,14 +1,17 @@
-import { Welcome } from '../components'
 import { Page } from '../templates'
-import Head from "next/head"
+import Head from 'next/head'
+import { Buttons, Forms } from '../components/'
 
 export default function Home(){
   return (
     <Page>
       <Head>
-        <title> CN Next Starter </title>
+        <title> Lifestyle </title>
       </Head>
-      <Welcome />
+
+      <Buttons />
+      <br /> <br />
+      <Forms />
     </Page>
   )
 }

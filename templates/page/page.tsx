@@ -7,7 +7,7 @@ type PageProps = {
 
 export function Page(props: PageProps){
   return (
-    <div>
+    <div className={style.wrapper}>
       { props.children }
     </div>
   )
