@@ -2,7 +2,7 @@
 
 >some css classes
 
-#### Buttons
+### Buttons
 ```css
 /* base */
 .button
@@ -27,7 +27,7 @@
 .button--rounded
 ```
 
-#### Forms
+### Forms
 ```css
 /* forms */
 .form
@@ -51,7 +51,7 @@
 .input__message--error
 ```
 
-#### Grid
+### Grid
 ```css
 .row
 .col
