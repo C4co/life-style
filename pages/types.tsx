@@ -35,6 +35,10 @@ export default function types(){
         Lorem <a className="link" href="#">ipsum dolor sit amet</a> consectetur adipisicing elit. Quo dolorem nam odio sit aspernatur id illo <a className="link" href="#">quas ab sequi</a> quis. Eum adipisci <a className="link" href="#">velit</a> voluptatem ea ut, debitis porro voluptatibus optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a className="link" href="#"> Voluptates autem iusto </a> eaque itaque repellendus? Dolorem at, eveniet facere omnis ullam consequatur ab? <a className="link" href="#"> Sint quidem eum </a> nihil perspiciatis ab numquam tempore.
       </p>
 
+      <h1 className="title text--primary"> Text color </h1>
+      <h1 className="title text--success"> Text color </h1>
+      <h1 className="title text--danger" > Text color </h1>
+
     </Page>
   )
 }

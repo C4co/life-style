@@ -89,6 +89,11 @@
 /* titles */
 .title
 .title--mid
+
+/* colors */
+.text--primary
+.text--success
+.text--danger
 ```
 
 ---
