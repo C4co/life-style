@@ -1,0 +1,16 @@
+/*==============================
+  Grid
+================================*/
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: $default-space;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,172 @@
+@use "sass:color";
+
+/*==============================
+  Button
+================================*/
+
+@mixin button($base-color){
+  *{
+    font-size: 1em;
+  }
+
+  font-family: inherit;
+  display: inline-flex;
+  gap: 12px;
+  margin: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 18px;
+  font-size: 0.80em;
+  background-color: $base-color;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s linear 0s;
+  overflow: hidden;
+  position: relative;
+  line-height: 0px;
+  border: solid $base-color 1px;
+  text-decoration: none;
+
+  @if color.lightness($base-color) <= 60% {
+    color: $button-font-light;
+  }@else{
+    color: $button-font-dark;
+  }
+
+  // loading spinner
+  &::before{
+    @if color.lightness($base-color) <= 60% {
+      background-color: $button-loading-light;
+    }@else{
+      background-color: $button-loading-dark;
+    }
+  }
+
+  &:disabled{
+    opacity: 0.8;
+    cursor: no-drop;
+  }
+
+  &:hover:not(&:disabled){
+    @if color.lightness($base-color) <= 15% {
+      background-color: lighten($base-color, 15%);
+      border: solid lighten($base-color, 15%) 1px;
+    }@else{
+      background-color: darken($base-color, 15%);
+      border: solid darken($base-color, 15%) 1px;
+    }
+  }
+
+  &:active{
+    position: relative;
+    top: 1px;
+  }
+
+  // Outline
+  &.button--outline{
+    background-color: transparent;
+    color: darken($base-color, 10%);
+
+    &:hover{
+      background-color: transparent !important;
+    }
+
+    &::before{
+      background-color: $base-color;
+    }
+  }
+}
+
+/*==============================
+  Colors
+================================*/
+
+.button, .button--primary{
+  @include button($primary-color);
+}
+
+.button--danger{
+  @include button($danger-color);
+}
+
+.button--success{
+  @include button($success-color);
+}
+
+.button--dark{
+  @include button($dark-color);
+}
+
+.button--light{
+  @include button($light-color);
+}
+
+/*==============================
+  Loading
+================================*/
+
+@keyframes loading{
+  0%{
+    left: 0%;
+    width: 10%;
+  }
+
+  50%{
+    left: 90%;
+  }
+
+  100%{
+    left: 0%;
+    width: 10%;
+  }
+}
+
+@mixin loading(){
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 90%;
+    width: 10px;
+    height: 2px;
+    border-radius: 50px;
+    animation: loading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+.button--loading{
+  @include loading();
+}
+
+/*==============================
+  Border
+================================*/
+
+.button--rounded{
+  border-radius: 100px;
+}
+
+/*==============================
+  Sizes
+================================*/
+
+.button--full{
+  width: 100%;
+}
+
+.button--big{
+  padding: 25px 30px;
+  font-size: 1em;
+}
+
+.button--small{
+  padding: 10px 15px;
+  height: 30px;
+  font-size: 0.7em;
+}

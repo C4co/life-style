@@ -1,5 +1,5 @@
 /*==============================
-  CSS Reset
+  Reset
 ================================*/
 
 *,
@@ -17,18 +17,11 @@ img {
 
 html,
 body {
-  font-family: var(--font-family);
-  font-size: var(--font-default-size);
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
   overflow-x: hidden;
 
   @media (max-width: 800px) {
-    font-size: 0.95rem;
+    font-size: 0.95em;
   }
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px white inset !important;
 }

@@ -1,22 +1,50 @@
 /*==============================
-  Variables
+  Background
 ================================*/
 
-:root{
-  // colors
-  --primary-color: #3399ff;
-  --font-title: #000000;
-  --font-color: #333333;
+$background-color: #ffffff;
 
-  // fonts
-  --font-default-size: 1em;
-  --font-family: "Inter", sans-serif;
+/*==============================
+  Colors
+================================*/
 
-  // button
-  --button-background: black;
-  --button-color: white;
-  --button-hover-shadow: 0px 0px 6px 1px red;
-  --button-outline-background: white;
-  --button-outline-border: black;
-  --button-outline-color: black;
-}
+$primary-color: #1269eb;
+$danger-color: #e73b3b;
+$success-color: #0c9d54;
+$dark-color: #161616;
+$light-color: #d6d6d6;
+
+/*==============================
+  Tables
+================================*/
+
+$table-header: #f4f4f4;
+
+/*==============================
+  Fonts
+================================*/
+
+$font-color: #2e2e2e;
+$title-color: #0e0e0e;
+$link-color: #0000ff;
+
+/*==============================
+  Border
+================================*/
+
+$border-color: #c8c8c8;
+
+/*==============================
+  Buttons
+================================*/
+
+$button-font-light: #FFFFFF;
+$button-font-dark: #000000;
+$button-loading-dark: #000000;
+$button-loading-light: #FFFFFF;
+
+/*==============================
+  Spaces
+================================*/
+
+$default-space: 20px;

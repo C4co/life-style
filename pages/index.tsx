@@ -1,6 +1,6 @@
 import { Page } from '../templates'
 import Head from 'next/head'
-import { Buttons, Forms } from '../components/'
+import Link from 'next/link'
 
 export default function Home(){
   return (
@@ -9,9 +9,38 @@ export default function Home(){
         <title> Lifestyle </title>
       </Head>
 
-      <Buttons />
-      <br /> <br />
-      <Forms />
+      <h1> Life style </h1>
+
+      <div>
+        <Link href="/buttons">
+          <a className="link"> Buttons </a>
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/forms">
+          <a className="link"> Forms </a>
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/tables">
+          <a className="link"> Tables </a>
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/grids">
+          <a className="link"> Grids </a>
+        </Link>
+      </div>
+
+      <div>
+        <Link href="/types">
+          <a className="link"> Types </a>
+        </Link>
+      </div>
+
     </Page>
   )
 }

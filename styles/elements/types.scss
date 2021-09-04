@@ -1,0 +1,118 @@
+/*==============================
+  Text
+================================*/
+
+.text{
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: $font-color;
+}
+
+/*==============================
+  Size
+================================*/
+
+.text--mid{
+  @extend .text;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.text--big{
+  @extend .text;
+
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.text--small{
+  @extend .text;
+
+  font-size: 0.85rem;
+}
+
+/*==============================
+  Align
+================================*/
+
+.text--center{
+  text-align: center;
+}
+
+.text--start{
+  text-align: start;
+}
+
+.text--end{
+  text-align: end;
+}
+
+.text--left{
+  text-align: left;
+}
+
+.text--right{
+  text-align: right;
+}
+
+/*==============================
+  Transform
+================================*/
+
+.text--uppercase{
+  text-transform: uppercase;
+}
+
+.text--lowercase{
+  text-transform: lowercase;
+}
+
+.text--capitalize{
+  text-transform: capitalize;
+}
+
+/*==============================
+  Weight
+================================*/
+
+.text--bold{
+  font-weight: bold;
+}
+
+.text--normal{
+  font-weight: normal;
+}
+
+/*==============================
+  Link
+================================*/
+
+.link{
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: solid lighten($link-color, 30%) 2px;
+  transition: all 0.2s linear 0s;
+
+  &:hover{
+    border-bottom: solid $link-color 2px;
+  }
+}
+
+/*==============================
+  Title
+================================*/
+
+.title{
+  @extend .text--big;
+
+  font-weight: bold;
+  color: $title-color;
+}
+
+.title--mid{
+  @extend .text--mid;
+
+  font-weight: bold;
+  color: $title-color;
+}
