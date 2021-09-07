@@ -1,9 +1,12 @@
-import React from 'react'
 import { Page } from '../templates'
+import Head from 'next/head'
 
 export default function Buttons(){
   return(
     <Page>
+      <Head>
+        <title> Buttons </title>
+      </Head>
 
       <h1 className="title text--center"> Buttons </h1>
 

@@ -1,10 +1,12 @@
-import React from 'react'
 import { Page } from '../templates'
+import Head from 'next/head'
 
 export default function grids(){
-
   return(
     <Page>
+      <Head>
+        <title> Grids </title>
+      </Head>
 
       <h1 className="title text--center"> Grid </h1>
 

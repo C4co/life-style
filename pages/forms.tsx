@@ -1,9 +1,12 @@
-import React from 'react'
 import { Page } from '../templates'
+import Head from 'next/head'
 
 export default function Forms(){
   return (
     <Page>
+      <Head>
+        <title> Forms </title>
+      </Head>
 
       <h1 className="title text--center"> Forms </h1>
 
