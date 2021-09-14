@@ -9,12 +9,13 @@
   border-collapse: collapse;
   text-align: left;
   border-radius: 5px;
+  color: var(--font-color);
 
   caption{
     font-weight: bold;
     margin: 0 0 -1px 0;
     padding: 10px;
-    border: solid $border-color 1px;
+    border: solid var(--border-color) 1px;
   }
 
   tr{
@@ -24,15 +25,16 @@
   td{
     padding: 10px;
     width: 2%;
-    border: solid $border-color 1px;
+    border: solid var(--border-color) 1px;
   }
 
   th{
     font-weight: bold;
     padding: 10px 0 10px 0;
     text-align: left;
-    border: solid $border-color 1px;
+    border: solid var(--border-color) 1px;
     padding: 10px;
-    background-color: $table-header;
+    background-color: var(--table-header);
+    color: var(--title-color);
   }
 }

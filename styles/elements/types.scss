@@ -5,7 +5,7 @@
 .text{
   font-size: 1.1rem;
   line-height: 1.8rem;
-  color: $font-color;
+  color: var(--font-color);
 }
 
 /*==============================
@@ -89,13 +89,12 @@
 ================================*/
 
 .link{
-  color: $link-color;
+  color: var(--link-color);
   text-decoration: none;
-  border-bottom: solid lighten($link-color, 30%) 2px;
   transition: all 0.2s linear 0s;
 
   &:hover{
-    border-bottom: solid $link-color 2px;
+    border-bottom: solid var(--link-color) 1px;
   }
 }
 
@@ -107,14 +106,14 @@
   @extend .text--big;
 
   font-weight: bold;
-  color: $title-color;
+  color: var(--title-color);
 }
 
 .title--mid{
   @extend .text--mid;
 
   font-weight: bold;
-  color: $title-color;
+  color: var(--title-color);
 }
 
 /*==============================
@@ -122,13 +121,13 @@
 ================================*/
 
 .text--primary{
-  color: $primary-color;
+  color: var(--primary-color);
 }
 
 .text--success{
-  color: $success-color;
+  color: var(--success-color);
 }
 
 .text--danger{
-  color: $danger-color;
+  color: var(--danger-color);
 }

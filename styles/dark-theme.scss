@@ -1,0 +1,66 @@
+@media (prefers-color-scheme: dark) {
+:root{
+/*==============================
+  Background
+================================*/
+
+--background-color: #1b1b25;
+
+/*==============================
+  Colors
+================================*/
+
+--primary-color: #2d71d8;
+--danger-color: #e16d6d;
+--success-color: #37a56e;
+
+/*==============================
+  Tables
+================================*/
+
+--table-header: #232330;
+
+/*==============================
+  Fonts
+================================*/
+
+--font-color: #7070a0;
+--title-color: #c0c0e5;
+--link-color: #2cc3ff;
+
+/*==============================
+  Border
+================================*/
+
+--border-color: #353547;
+
+/*==============================
+  Buttons
+================================*/
+
+--button-background: #2568cc;
+--button-background-hover: rgb(48, 125, 241);
+--button-color: #FFFFFF;
+
+/*==============================
+  Input
+================================*/
+
+--input-background: #272737;
+--input-border: #272737;
+--input-border-focus: #1269eb;
+--input-placeholder: #676792;
+
+--input-success-border: #326250;
+--input-success-background: #20302a;
+
+--input-error-border: #7d3333;
+--input-error-background: #3c2020;
+
+/*==============================
+  Spaces
+================================*/
+
+--default-space: 20px;
+}
+}

@@ -20,6 +20,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1em;
   overflow-x: hidden;
+  background-color: var(--background-color);
 
   @media (max-width: 800px) {
     font-size: 0.95em;

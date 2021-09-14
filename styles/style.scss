@@ -2,8 +2,9 @@
   Main
 ================================*/
 
-// config
-@import './variables.scss';
+// theme
+@import './light-theme.scss';
+@import './dark-theme.scss';
 
 // reset
 @import './reset.scss';

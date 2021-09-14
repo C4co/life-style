@@ -11,6 +11,7 @@
 
   font-family: inherit;
   display: inline-flex;
+  height: 20px;
   gap: 12px;
   margin: 2px;
   text-transform: uppercase;
@@ -20,29 +21,25 @@
   align-items: center;
   padding: 18px 18px;
   font-size: 0.80em;
-  background-color: $base-color;
   border: none;
   border-radius: 3px;
   transition: all 0.2s linear 0s;
   overflow: hidden;
   position: relative;
   line-height: 0px;
-  border: solid $base-color 1px;
   text-decoration: none;
 
-  @if color.lightness($base-color) <= 60% {
-    color: $button-font-light;
-  }@else{
-    color: $button-font-dark;
+  background-color: var(#{$base-color});
+  border: solid var(#{$base-color}) 1px;
+  color: var(--button-color);
+
+  &::before{
+    background-color: var(--button-color);
   }
 
-  // loading spinner
-  &::before{
-    @if color.lightness($base-color) <= 60% {
-      background-color: $button-loading-light;
-    }@else{
-      background-color: $button-loading-dark;
-    }
+  &:hover:not(&:disabled){
+    background-color: var(#{$base-color}-hover);
+    border: solid var(#{$base-color}-hover) 1px;
   }
 
   &:disabled{
@@ -50,32 +47,17 @@
     cursor: no-drop;
   }
 
-  &:hover:not(&:disabled){
-    @if color.lightness($base-color) <= 15% {
-      background-color: lighten($base-color, 15%);
-      border: solid lighten($base-color, 15%) 1px;
-    }@else{
-      background-color: darken($base-color, 15%);
-      border: solid darken($base-color, 15%) 1px;
-    }
-  }
-
-  &:active{
-    position: relative;
-    top: 1px;
-  }
-
   // Outline
   &.button--outline{
     background-color: transparent;
-    color: darken($base-color, 10%);
+    color: var(#{$base-color});
 
-    &:hover{
+    &:hover, &:active{
       background-color: transparent !important;
     }
 
     &::before{
-      background-color: $base-color;
+      background-color: var(#{$base-color});
     }
   }
 }
@@ -84,24 +66,8 @@
   Colors
 ================================*/
 
-.button, .button--primary{
-  @include button($primary-color);
-}
-
-.button--danger{
-  @include button($danger-color);
-}
-
-.button--success{
-  @include button($success-color);
-}
-
-.button--dark{
-  @include button($dark-color);
-}
-
-.button--light{
-  @include button($light-color);
+.button{
+  @include button('--button-background');
 }
 
 /*==============================
@@ -124,7 +90,7 @@
   }
 }
 
-@mixin loading(){
+.button--loading{
   &::before{
     content: "";
     position: absolute;
@@ -138,10 +104,6 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-}
-
-.button--loading{
-  @include loading();
 }
 
 /*==============================
@@ -167,6 +129,6 @@
 
 .button--small{
   padding: 10px 15px;
-  height: 30px;
+  height: 28px;
   font-size: 0.7em;
 }
