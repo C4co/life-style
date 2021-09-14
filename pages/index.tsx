@@ -9,7 +9,7 @@ export default function Home(){
         <title> Lifestyle </title>
       </Head>
 
-      <h1> Life style </h1>
+      <h1 className="title"> Life style </h1>
 
       <div>
         <Link href="/buttons">
