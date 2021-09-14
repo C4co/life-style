@@ -6,11 +6,9 @@
 ```css
 /* base */
 .button
-.button--primary
-.button--danger
-.button--success
+
+/* colors */
 .button--dark
-.button--light
 
 /* loading */
 .button--loading
