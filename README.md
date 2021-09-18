@@ -7,9 +7,6 @@
 /* base */
 .button
 
-/* colors */
-.button--dark
-
 /* loading */
 .button--loading
 
