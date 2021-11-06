@@ -14,9 +14,6 @@ npx github-download-directory c4co/lifestyle styles
 /* base */
 .button
 
-/* colors */
-.button--dark
-
 /* loading */
 .button--loading
 

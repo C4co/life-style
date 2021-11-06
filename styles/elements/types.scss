@@ -12,6 +12,12 @@
   Size
 ================================*/
 
+.text--small{
+  @extend .text;
+
+  font-size: 0.85rem;
+}
+
 .text--mid{
   @extend .text;
 
@@ -24,12 +30,6 @@
 
   font-size: 1.8rem;
   line-height: 2.5rem;
-}
-
-.text--small{
-  @extend .text;
-
-  font-size: 0.85rem;
 }
 
 /*==============================
