@@ -29,9 +29,9 @@ export default function Buttons(){
       </div>
 
       <div>
-        <button disabled className="button button--big button--loading"> Button </button>
-        <button disabled className="button button--loading"> Button </button>
-        <button disabled className="button button--small button--loading"> Button </button>
+        <button disabled className="button button--big button--loading"> Loading... </button>
+        <button disabled className="button button--loading"> Loading... </button>
+        <button disabled className="button button--small button--loading"> Loading... </button>
       </div>
 
       <div>
