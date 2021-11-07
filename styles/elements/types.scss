@@ -94,7 +94,7 @@
   transition: all 0.2s linear 0s;
 
   &:hover{
-    border-bottom: solid var(--link-color) 1px;
+    text-decoration: underline;
   }
 }
 
