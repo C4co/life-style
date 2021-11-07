@@ -1,5 +1,6 @@
 import { Page } from '../templates'
 import Head from 'next/head'
+import { Content, Header } from '@/components'
 
 export default function grids(){
   return(
@@ -8,77 +9,67 @@ export default function grids(){
         <title> Grids </title>
       </Head>
 
-      <h1 className="title text--center"> Grid </h1>
+      <Header>
+        Grid
+      </Header>
 
-      <div className="row">
-        <div className="col">
-          <input className="input" type="text" />
+      <Content>
+        <div className="row">
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
         </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <input className="input" type="text" />
+        <div className="row">
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
         </div>
-
-        <div className="col">
-          <input className="input" type="text" />
+        <div className="row">
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
         </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <input className="input" type="text" />
+        <div className="row">
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
         </div>
-
-        <div className="col">
-          <input className="input" type="text" />
+        <div className="row">
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
+          <div className="col">
+            <input className="input" type="text" />
+          </div>
         </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-      </div>
-
-      <div className="row">
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-
-        <div className="col">
-          <input className="input" type="text" />
-        </div>
-      </div>
+      </Content>
 
     </Page>
   )

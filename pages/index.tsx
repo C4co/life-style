@@ -1,6 +1,6 @@
 import { Page } from '../templates'
 import Head from 'next/head'
-import Link from 'next/link'
+import { Header, Content, Menu } from '@/components'
 
 export default function Home(){
   return (
@@ -9,37 +9,11 @@ export default function Home(){
         <title> Lifestyle </title>
       </Head>
 
-      <h1 className="title"> Life style </h1>
+      <Header> Lifestyle </Header>
 
-      <div>
-        <Link href="/buttons">
-          <a className="link"> Buttons </a>
-        </Link>
-      </div>
-
-      <div>
-        <Link href="/forms">
-          <a className="link"> Forms </a>
-        </Link>
-      </div>
-
-      <div>
-        <Link href="/tables">
-          <a className="link"> Tables </a>
-        </Link>
-      </div>
-
-      <div>
-        <Link href="/grids">
-          <a className="link"> Grids </a>
-        </Link>
-      </div>
-
-      <div>
-        <Link href="/types">
-          <a className="link"> Types </a>
-        </Link>
-      </div>
+      <Content>
+        <Menu />
+      </Content>
 
     </Page>
   )
