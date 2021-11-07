@@ -56,15 +56,26 @@ npx github-download-directory c4co/lifestyle styles
 Checkbox and radio
 ```html
 <!-- checkbox -->
-<div className='checkbox'>
+<div class='checkbox'>
   <input id='first-check' type='checkbox' />
   <label htmlFor='first-check'> First </label>
 </div>
 
 <!-- radio -->
-<div className='radio'>
+<div class='radio'>
   <input id='second-radio' type='radio' name='group' />
   <label htmlFor='second-radio'> Second button </label>
+</div>
+```
+
+Inputs
+```html
+<div>
+  <label class="label"> Label </label>
+  <input type="text" class="input" placeholder="Placeholder" />
+  <span class="input__message">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  </span>
 </div>
 ```
 
