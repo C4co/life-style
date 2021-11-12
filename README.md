@@ -9,7 +9,7 @@ Donwload style folder
 npx github-download-directory c4co/lifestyle styles
 ```
 
-### Buttons
+## Buttons
 ```css
 /* base */
 .button
@@ -29,7 +29,7 @@ npx github-download-directory c4co/lifestyle styles
 .button--rounded
 ```
 
-### Forms
+## Forms
 ```css
 /* forms */
 .form
@@ -79,13 +79,13 @@ Inputs
 </div>
 ```
 
-### Grid
+## Grid
 ```css
 .row
 .col
 ```
 
-### Types
+## Types
 ```css
 .text
 
