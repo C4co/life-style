@@ -1,13 +1,12 @@
-@media (prefers-color-scheme: dark) {
-:root{
+[data-theme="dark"]{
 /*==============================
-  Background
+Background
 ================================*/
 
 --background-color: #1b1b25;
 
 /*==============================
-  Colors
+Colors
 ================================*/
 
 --primary-color: #2d71d8;
@@ -15,13 +14,13 @@
 --success-color: #37a56e;
 
 /*==============================
-  Tables
+Tables
 ================================*/
 
 --table-header: #232330;
 
 /*==============================
-  Fonts
+Fonts
 ================================*/
 
 --font-color: #7070a0;
@@ -29,13 +28,13 @@
 --link-color: #2cc3ff;
 
 /*==============================
-  Border
+Border
 ================================*/
 
---border-color: #353547;
+--border-color: #2a2a38;
 
 /*==============================
-  Buttons
+Buttons
 ================================*/
 
 --button-background: #2568cc;
@@ -43,7 +42,7 @@
 --button-color: #FFFFFF;
 
 /*==============================
-  Input
+Input
 ================================*/
 
 --input-background: #272737;
@@ -58,9 +57,8 @@
 --input-error-background: #3c2020;
 
 /*==============================
-  Spaces
+Spaces
 ================================*/
 
 --default-space: 20px;
-}
 }
