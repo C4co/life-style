@@ -1,4 +1,22 @@
 .header{
   padding: 15px 20px 15px 20px;
   border-bottom: solid var(--border-color) 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__button{
+  border: solid var(--border-color) 1px;
+  background: none;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 100px;
 }
