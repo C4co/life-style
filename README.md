@@ -1,4 +1,4 @@
-# Lifestyle
+# 🏄 Lifestyle
 
 >some css classes
 
@@ -9,7 +9,21 @@ Donwload style folder
 npx github-download-directory c4co/lifestyle styles
 ```
 
-## Buttons
+Add data-theme attribute on <html> tag.
+```html
+<html data-theme="light"> ... </html>
+```
+
+## Theme Structure
+```css
+[data-theme="theme-name"]{
+  /* css variables */
+}
+```
+
+## Elements
+
+#### 🟢 • Buttons
 ```css
 /* base */
 .button
@@ -29,7 +43,7 @@ npx github-download-directory c4co/lifestyle styles
 .button--rounded
 ```
 
-## Forms
+#### 🟢 • Forms
 ```css
 /* forms */
 .form
@@ -79,13 +93,13 @@ Inputs
 </div>
 ```
 
-## Grid
+#### 🟢 • Grid
 ```css
 .row
 .col
 ```
 
-## Types
+#### 🟢 • Types
 ```css
 .text
 
