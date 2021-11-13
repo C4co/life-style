@@ -9,7 +9,7 @@ Donwload style folder
 npx github-download-directory c4co/lifestyle styles
 ```
 
-Add data-theme attribute on <html> tag.
+Add data-theme attribute on ```<html>``` tag.
 ```html
 <html data-theme="light"> ... </html>
 ```
